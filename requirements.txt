@@ -1,0 +1,7 @@
+djangorestframework
+django-extensions
+Django==3.2.7
+psycopg2-binary==2.9.1
+gunicorn==20.1.0
+boto3==1.18.45
+django-storages==1.11.1

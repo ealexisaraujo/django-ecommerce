@@ -56,12 +56,12 @@ def search(request):
     keyword = request.GET['keyword']
     # if keyword:
     products = Product.objects.order_by('-created_date').filter(Q(product_name__icontains=keyword) | Q(description__icontains=keyword))
-    products_count = products.count()
+    product_count = products.count()
     if not keyword:
       products = ""
-      products_count = 0
+      product_count = 0
     context = {
         'products': products,
-        'products_count': products_count
+        'product_count': product_count
       }
     return render(request, 'store/store.html', context)

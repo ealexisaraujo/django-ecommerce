@@ -16,9 +16,9 @@ clean-dev:
 
 ssh-dev:
 	@if [ "$(shell uname -s)" == "Darwin" ]; then \
-		( docker exec -it -w /usr/src/app greatkart-web-1 sh ); \
+		( docker exec -it -w /usr/src/app greatkart_web_1 sh ); \
 	else \
-		( docker exec -it -w /usr/src/app greatkart-web-1 zsh ); \
+		( docker exec -it -w /usr/src/app greatkart_web_1 zsh ); \
 	fi;
 
 superuser:
